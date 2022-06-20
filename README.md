@@ -1,2 +1,2 @@
-### add readme here...
-A customized create-react-app template.
+### css examples
+trying out different css techniques
