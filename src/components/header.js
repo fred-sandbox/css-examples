@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const StyledHeader = styled.header`
   height: 50px;
@@ -6,17 +7,23 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid black;
 
   h1 {
     font-size: 2rem;
+  }
+
+  &:hover {
+    background: whitesmoke;
   }
 `;
 
 export const Header = () => {
   return (
-    <StyledHeader>
-      <h1>css examples</h1>
-    </StyledHeader>
+    <Link to=''>
+      <StyledHeader>
+        <h1>css examples</h1>
+      </StyledHeader>
+    </Link>
   );
 };
