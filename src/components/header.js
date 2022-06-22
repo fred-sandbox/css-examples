@@ -18,4 +18,4 @@ export const Header = () => {
             <h1>css examples</h1>
         </StyledHeader>
     )
-}
+};

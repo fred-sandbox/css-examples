@@ -8,10 +8,10 @@ const StyledButton = styled.div`
   align-items: center;
   border-bottom: 1px solid lightgray;
   box-sizing: border-box;
-  
+
   &:hover {
     cursor: pointer;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     background: whitesmoke;
   }
 `;
@@ -22,4 +22,4 @@ export const Button = props => {
             {props.displayName}
         </StyledButton>
     )
-}
+};
