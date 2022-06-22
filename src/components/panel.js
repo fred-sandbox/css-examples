@@ -1,6 +1,7 @@
 import {Header} from './header';
 import styled from 'styled-components';
 import {Button} from './button';
+import {Link} from 'react-router-dom';
 
 const StyledPanel = styled.div`
   position: absolute;
@@ -12,16 +13,24 @@ const StyledPanel = styled.div`
 `;
 
 const placeHolderButtons = [
-    {displayName: 'example 1'},
-    {displayName: 'example 2'},
-    {displayName: 'example 3'}
+    {displayName: 'example 1', route: 'example1'},
+    {displayName: 'example 2', route: 'example2'},
+    {displayName: 'example 3', route: 'example3'}
 ]
+
+const mapButtons = placeHolderButtons.map(button => {
+    return (
+        <Link to={button.route}>
+            <Button {...button}/>
+        </Link>
+    )
+})
 
 export const Panel = () => {
     return (
         <StyledPanel>
             <Header/>
-            {placeHolderButtons.map(button => <Button {...button}></Button>)}
+            {mapButtons}
         </StyledPanel>
     )
 }
