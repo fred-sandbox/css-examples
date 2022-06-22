@@ -18,13 +18,11 @@ const placeHolderButtons = [
     {displayName: 'example 3', route: 'example3'}
 ]
 
-const mapButtons = placeHolderButtons.map(button => {
-    return (
-        <Link to={button.route}>
-            <Button {...button}/>
-        </Link>
-    )
-})
+const mapButtons = placeHolderButtons.map(button => (
+    <Link to={button.route}>
+        <Button {...button}/>
+    </Link>
+));
 
 export const Panel = () => {
     return (
@@ -33,4 +31,4 @@ export const Panel = () => {
             {mapButtons}
         </StyledPanel>
     )
-}
+};
