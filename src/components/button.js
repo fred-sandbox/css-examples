@@ -16,10 +16,6 @@ const StyledButton = styled.div`
   }
 `;
 
-export const Button = props => {
-    return (
-        <StyledButton>
-            {props.displayName}
-        </StyledButton>
-    )
+export const Button = (props) => {
+  return <StyledButton>{props.displayName}</StyledButton>;
 };
