@@ -11,7 +11,7 @@ const StyledPanel = styled.div`
   width: 250px;
   background: rgba(256, 256, 256, 0.5);
   backdrop-filter: blur(5px);
-  border: 1px solid black;
+  border-right: 1px solid black;
   z-index: 20;
 `;
 
