@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledButton = styled.div`
   height: 50px;
@@ -18,4 +19,8 @@ const StyledButton = styled.div`
 
 export const Button = (props) => {
   return <StyledButton>{props.displayName}</StyledButton>;
+};
+
+Button.propTypes = {
+  displayName: PropTypes.string
 };
