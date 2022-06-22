@@ -7,15 +7,16 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid lightgray;
+
   h1 {
     font-size: 2rem;
   }
 `;
 
 export const Header = () => {
-    return (
-        <StyledHeader>
-            <h1>css examples</h1>
-        </StyledHeader>
-    )
+  return (
+    <StyledHeader>
+      <h1>css examples</h1>
+    </StyledHeader>
+  );
 };

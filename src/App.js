@@ -14,16 +14,16 @@ const StyledDiv = styled.div`
   box-sizing: border-box;
 `;
 
-export const App = () =>  {
+export const App = () => {
   return (
     <StyledDiv>
-        <Panel/>
-        display
-        <Routes>
-            <Route path='/example1' element={<Example number='1'/>}/>
-            <Route path='/example2' element={<Example number='2'/>}/>
-            <Route path='/example3' element={<Example number='3'/>}/>
-        </Routes>
+      <Panel />
+      display
+      <Routes>
+        <Route path='/example1' element={<Example number='1' />} />
+        <Route path='/example2' element={<Example number='2' />} />
+        <Route path='/example3' element={<Example number='3' />} />
+      </Routes>
     </StyledDiv>
   );
 };

@@ -13,22 +13,22 @@ const StyledPanel = styled.div`
 `;
 
 const placeHolderButtons = [
-    {displayName: 'example 1', route: 'example1'},
-    {displayName: 'example 2', route: 'example2'},
-    {displayName: 'example 3', route: 'example3'}
-]
+  {displayName: 'example 1', route: 'example1'},
+  {displayName: 'example 2', route: 'example2'},
+  {displayName: 'example 3', route: 'example3'}
+];
 
-const mapButtons = placeHolderButtons.map(button => (
-    <Link to={button.route}>
-        <Button {...button}/>
-    </Link>
+const mapButtons = placeHolderButtons.map((button) => (
+  <Link to={button.route}>
+    <Button {...button} />
+  </Link>
 ));
 
 export const Panel = () => {
-    return (
-        <StyledPanel>
-            <Header/>
-            {mapButtons}
-        </StyledPanel>
-    )
+  return (
+    <StyledPanel>
+      <Header />
+      {mapButtons}
+    </StyledPanel>
+  );
 };
