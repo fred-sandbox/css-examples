@@ -1,24 +1,8 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-const StyledButton = styled.div`
-  height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid black;
-  box-sizing: border-box;
-
-  &:hover {
-    cursor: pointer;
-    font-size: 1.1rem;
-    background: whitesmoke;
-  }
-`;
+import styles from '../styles/button.module.css';
 
 export const Button = (props) => {
-  return <StyledButton>{props.displayName}</StyledButton>;
+  return <div className={styles.button}>{props.displayName}</div>;
 };
 
 Button.propTypes = {

@@ -1,26 +1,18 @@
 import './reset.css';
-import styled from 'styled-components';
-import {Panel} from './components/panel';
 import {Routes, Route} from 'react-router-dom';
+import styles from './styles/App.module.css';
 import {Parallax} from './examples/parallax';
-
-const StyledDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Arial Rounded MT Bold', sans-serif;
-  box-sizing: border-box;
-`;
+import {Home} from './Home';
+import {Panel} from './components/panel';
 
 export const App = () => {
   return (
-    <StyledDiv>
+    <div className={styles.main}>
       <Panel />
       <Routes>
-        <Route exact path='/' element={<Parallax />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/parallax' element={<Parallax />} />
       </Routes>
-    </StyledDiv>
+    </div>
   );
 };
